@@ -75,7 +75,7 @@ object Constants{
             "Which country does this flag belongs to ?", R.drawable.italy,
             "Australia",
             "Sweeden",
-            "USA",
+            "Italy",
             "Turkey",
             3
         )
@@ -85,7 +85,7 @@ object Constants{
             "Which country does this flag belongs to ?", R.drawable.poland,
             "Australia",
             "Sweeden",
-            "USA",
+            "Poland",
             "Turkey",
             3
         )
@@ -95,7 +95,7 @@ object Constants{
             "Which country does this flag belongs to ?", R.drawable.spain,
             "Australia",
             "Sweeden",
-            "USA",
+            "Spain",
             "Turkey",
             3
         )
@@ -105,7 +105,7 @@ object Constants{
             "Which country does this flag belongs to ?", R.drawable.sweeden,
             "Australia",
             "Sweeden",
-            "USA",
+            "Sweeden",
             "Turkey",
             3
         )
