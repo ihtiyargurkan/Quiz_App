@@ -12,5 +12,10 @@ can see his name and score. Screenshots can be seen as below.
  <tbody>
   <tr><td>You can test your knowledge via questions.</td></tr>
   <tr><td>You can view quiz results.</td></tr>
+  
+![Alt text](https://raw.githubusercontent.com/ihtiyargurkan/Quiz_App/master/screenshot_1.jpg "Optional title")
+![Alt text](https://raw.githubusercontent.com/ihtiyargurkan/Quiz_App/master/screenshot_2.jpg "Optional title")
+![Alt text](https://raw.githubusercontent.com/ihtiyargurkan/Quiz_App/master/screenshot_3.jpg "Optional title")
+![Alt text](https://raw.githubusercontent.com/ihtiyargurkan/Quiz_App/master/screenshot_4.jpg "Optional title")
+![Alt text](https://raw.githubusercontent.com/ihtiyargurkan/Quiz_App/master/screenshot_5.jpg "Optional title")
 
-![Alt text](url "https://raw.githubusercontent.com/ihtiyargurkan/Quiz_App/master/screenshot_1.jpg")
