@@ -36,19 +36,22 @@ can see his name and score.
 </p>
 
 <h4 align="center">
-2. If user guess the question right, correct answer colored green.
+3. If user guess the question right, correct answer colored green.
 </h4>
 
 <p align="center">
  <img src="https://raw.githubusercontent.com/ihtiyargurkan/Quiz_App/master/screenshot_3.jpg " width="300" height="600">   
 </p>  
   
-
+<h4 align="center">
+4.
+</h4>
+  
 <p align="center">
  <img src="https://raw.githubusercontent.com/ihtiyargurkan/Quiz_App/master/screenshot_4.jpg " width="300" height="600">   
 </p>  
 <h4 align="center">
-Results can bee seen there.
+5. Results can bee seen there.
 </h4>
 
 <p align="center">
