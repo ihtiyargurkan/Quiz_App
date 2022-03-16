@@ -1,5 +1,5 @@
 # Quiz_App
-A quiz app that show nations flags, and user try to guess the correct answer. In tha main screen user enter his username. A toast message welcoming the user with his/her name.
+A quiz app that show nations flags, and user try to guess the correct answer. In the main screen user enter his username. A toast message welcoming the user with his/her name.
 Questions added on Constants object. If user choose wrong answer, user's choice will be red and the correct answer will come up with green. At the result screen, user 
 can see his name and score. 
 <table align="center">
