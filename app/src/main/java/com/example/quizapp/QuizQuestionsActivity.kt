@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat
 import com.example.quizapp.databinding.ActivityQuizQuestionsBinding
 
 class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
-    private lateinit var binding: ActivityQuizQuestionsBinding
+    private var binding : ActivityQuizQuestionsBinding? = null
     private var mCurrentPosition: Int = 1 // Default and the first question position
     private var mQuestionsList: ArrayList<Question>? = null
     private var mSelectedOptionPosition: Int = 0
@@ -32,18 +32,18 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityQuizQuestionsBinding.inflate(layoutInflater)
-        val view = binding.root
+        val view = binding?.root
         setContentView(view)
         mUserName = intent.getStringExtra(Constants.USER_NAME)
-        progressBar = binding.progressBar
-        tvProgress = binding.progressText
-        tvQuestion = binding.questionText
-        ivImage = binding.quizImage
-        tvOptionOne = binding.optionOne
-        tvOptionTwo = binding.optionTwo
-        tvOptionThree = binding.optionThree
-        tvOptionFour = binding.optionFour
-        buttonSubmit = binding.submitButton
+        progressBar = binding?.progressBar
+        tvProgress = binding?.progressText
+        tvQuestion = binding?.questionText
+        ivImage = binding?.quizImage
+        tvOptionOne = binding?.optionOne
+        tvOptionTwo = binding?.optionTwo
+        tvOptionThree = binding?.optionThree
+        tvOptionFour = binding?.optionFour
+        buttonSubmit = binding?.submitButton
         mQuestionsList = Constants.getQuestions()
         setQuestion()
 
@@ -229,4 +229,9 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             )
         }
     }
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
+    }
+
 }

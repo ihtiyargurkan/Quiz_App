@@ -11,18 +11,18 @@ import androidx.core.content.ContentProviderCompat.requireContext
 import com.example.quizapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private var binding: ActivityMainBinding? = null
     private var nameText : TextView? = null
     private var startButton : Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
+        val view = binding?.root
         setContentView(view)
 
-        startButton = binding.startButton
-        nameText = binding.nameText
+        startButton = binding?.startButton
+        nameText = binding?.nameText
         startButton?.setOnClickListener {
             if (nameText?.text?.isEmpty() == true){
                 Toast.makeText(applicationContext, "Please enter your name", Toast.LENGTH_SHORT).show()
@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 
 
